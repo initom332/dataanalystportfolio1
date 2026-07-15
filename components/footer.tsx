@@ -73,11 +73,10 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="container-page flex flex-col items-center justify-between gap-3 border-t border-ink-border py-6 text-xs text-muted md:flex-row">
+      <div className="container-page flex flex-col items-center justify-center gap-3 border-t border-ink-border py-6 text-xs text-muted md:flex-row">
         <p>
-          © {year} {profile.name}. All rights reserved.
+          © {year} GrandisInnovo. All rights reserved.
         </p>
-        <p className="font-mono">Built with Next.js, Tailwind CSS &amp; Framer Motion.</p>
       </div>
     </footer>
   );
