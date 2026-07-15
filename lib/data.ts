@@ -141,70 +141,65 @@ export const certifications = [
   {
     name: "Data Analytics Certification",
     issuer: "10Alytics",
-    year: "2024",
+    year: "2026",
     logo: "/images/cert-10alytics.svg"
   },
   {
     name: "3MTT Fellowship — Data Science Track",
     issuer: "3MTT (FG Nigeria)",
-    year: "2024",
+    year: "2026",
     logo: "/images/cert-3mtt.svg"
   },
   {
-    name: "IBM Data Science Professional Certificate",
+    name: "IBM Data & AI SkilBuild Macro Certificate",
     issuer: "IBM",
-    year: "2023",
+    year: "2026",
     logo: "/images/cert-ibm.svg"
   },
   {
-    name: "AWS Certified Cloud Practitioner",
+    name: "AWS AI Practitioner Challenge",
     issuer: "Amazon Web Services",
-    year: "2024",
+    year: "2026",
     logo: "/images/cert-aws.svg"
   },
-  {
-    name: "Deep Learning Specialization",
-    issuer: "DeepLearning.AI",
-    year: "2023",
-    logo: "/images/cert-dlai.svg"
-  }
+
 ];
 
 export const experience = [
   {
     company: "10Alytics",
     role: "Data Analyst",
-    period: "2023 — Present",
+    period: "2026 ",
     summary:
-      "Lead analytics engagements for clients across fintech and retail, building dashboards and predictive models that drive measurable business decisions.",
+      "Completed advanced coursework in Excel, Power BI, Tableau, Postgre SQL, Microsoft Fabrics and ChatGPT for Analyics.",
     highlights: [
-      "Delivered 12+ client analytics projects with an average 4.8/5 satisfaction score",
-      "Mentored 6 junior analysts on SQL and dashboard best practices",
-      "Built the internal churn-prediction template reused across 4 client engagements"
+      "Built 4 end to end capstone projects spanning Analytics, forecasting, and predictive modeling",
+      "Placed in the top 5% of the program cohort",
+
     ]
   },
   {
     company: "Amdari",
-    role: "Data Science Trainee → Junior Data Scientist",
-    period: "2022 — 2023",
+    role: "Data Analyst",
+    period: "2026",
     summary:
-      "Rotated across data engineering, ML, and analytics squads while completing an applied data science bootcamp.",
+      "Lead analytics engagements for clients across fintech and retail, building dashboards and predictive models that drive measurable business decisions.",
     highlights: [
-      "Built 5 end-to-end capstone projects spanning NLP, forecasting, and computer vision",
-      "Placed in the top 5% of the program cohort",
-      "Contributed to an open-source data-quality toolkit"
+      "Delivered 8+ client analytics projects with an average 4.8/5 satisfaction score",
+      "Mentored 3 junior analysts on Tableau and dashboard best practices",
+
     ]
   },
   {
     company: "3MTT (3 Million Technical Talent)",
     role: "Data Science Fellow",
-    period: "2023 — 2024",
+    period: "2026",
     summary:
       "Selected for the Federal Government of Nigeria's national tech talent program, specializing in data science and AI.",
     highlights: [
       "Completed advanced coursework in ML, deep learning, and MLOps",
       "Led a team project on agricultural yield forecasting for smallholder farmers",
-      "Graduated with distinction"
+      "Ongoing"
     ]
   }
 ];
