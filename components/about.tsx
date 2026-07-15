@@ -41,23 +41,23 @@ export default function About() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="font-display text-3xl font-semibold tracking-tight sm:text-4xl">
-            From spreadsheets to shipped models.
+            From spreadsheets to actionable insights that shape growth.
           </h2>
           <div className="mt-6 space-y-4 text-muted">
             <p>
               I&apos;m a data analyst and data scientist with three years of experience turning messy,
-              real-world data into dashboards, models, and tools that people actually use. My work spans
-              the full lifecycle — from wrangling raw data and building pipelines, to training models and
-              shipping the interfaces that put insight in front of decision-makers.
+              real world data into dashboards, models, and tools that people actually use. My work spans
+              the full lifecycle from wrangling raw data and building pipelines, to training models and
+              shipping the interfaces that put insight in front of decision makers.
             </p>
             <p>
-              I got here through the 3MTT fellowship and Amdari&apos;s applied data science program, then
-              spent the last two years at 10Alytics working directly with clients across fintech and
-              retail — where I learned that the best analysis is the one someone actually acts on.
+              I got here through Self learning, a journey to understand data more through 10Alytics to earn a Masters in Data Analytics and
+              3MTT fellowship then spent the last 8 months at Amdari, working directly with clients across fintech and
+              retail, where I learned that the best analysis is the one someone actually acts on.
             </p>
             <p>
               Outside client work, I&apos;m usually deep in a Kaggle dataset, contributing to open-source
-              tooling, or writing up a project breakdown for other analysts learning the craft.
+              tooling, or writing a project breakdown for other analysts learning the craft.
             </p>
           </div>
         </motion.div>
