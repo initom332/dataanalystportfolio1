@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { ExternalLink, Github, Search } from "lucide-react";
 import { projects, type Project } from "@/lib/data";
 
-const categories = ["All", "Analytics", "Machine Learning", "NLP", "Computer Vision", "Data Engineering"];
+const categories = ["All", "Data Analytics", "Data Science", "AI",];
 
 function ProjectCard({ project }: { project: Project }) {
   const [open, setOpen] = useState(false);
