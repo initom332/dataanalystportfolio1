@@ -68,6 +68,7 @@ export type Project = {
   technologies: string[];
   results: string[];
   github: string;
+  demo?: string;
   category: "Analytics" | "Data Science" | "AI" ;
 };
 
