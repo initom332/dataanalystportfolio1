@@ -80,14 +80,14 @@ function ProjectCard({ project }: { project: Project }) {
           ))}
         </div>
 
-        <div className="mt-6 flex items-center gap-4">
+         <div className="mt-6 flex items-center gap-4">
           <a
             href={project.github}
             target="_blank"
             rel="noopener noreferrer"
             className="focus-ring flex items-center gap-1.5 text-sm font-medium text-inherit hover:text-signal-amber"
           >
-            <Github size={16} /> Code
+            <Github size={16} /> Project
           </a>
           <a
             href={project.demo}
@@ -95,7 +95,7 @@ function ProjectCard({ project }: { project: Project }) {
             rel="noopener noreferrer"
             className="focus-ring flex items-center gap-1.5 text-sm font-medium text-inherit hover:text-signal-amber"
           >
-            <ExternalLink size={16} /> Live demo
+            <ExternalLink size={16} />
           </a>
         </div>
       </div>
@@ -120,11 +120,10 @@ export default function Projects() {
 
   return (
     <section id="projects" className="container-page py-24">
-      <p className="section-label">{`// Featured work`}</p>
+      <p className="section-label">// Featured work</p>
       <h2 className="mt-3 font-display text-3xl font-semibold sm:text-4xl">Featured Projects</h2>
       <p className="mt-3 max-w-2xl text-muted">
-        A sample of end-to-end projects spanning analytics, machine learning, NLP, and computer
-        vision — each one shipped to solve a real business problem.
+        A sample of end to end projects spanning analytics and Data science each one shipped to solve a real business problem.
       </p>
 
       <div className="mt-8 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
