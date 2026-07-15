@@ -70,7 +70,7 @@ export default function Hero() {
   const typed = useTypewriter(roles);
 
   return (
-    <section id="top" className="relative flex min-h-screen items-center overflow-hidden pt-24">
+    <section id="top" className="relative flex min-h-screen items-center overflow-hidden pt-28">
       <ParticleField />
       <div className="pointer-events-none absolute inset-0 bg-grid-lines bg-grid [mask-image:radial-gradient(ellipse_at_center,black_10%,transparent_70%)]" />
 
@@ -88,7 +88,7 @@ export default function Hero() {
             Available for select engagements
           </p>
 
-          <h1 className="font-display text-4xl font-semibold leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl">
+          <h1 className="font-display text-2xl font-semibold leading-[1.08] tracking-tight sm:text-3xl lg:text-4xl">
             Hi, I&apos;m {profile.name}.
             <br />
             <span className="text-muted">I work as a </span>
