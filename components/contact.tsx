@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Github, Linkedin, Mail, MapPin, Send } from "lucide-react";
+import { Github, Linkedin, Mail, MapPin, MessageCircle, Send } from "lucide-react";
 import { profile } from "@/lib/data";
 
 type Status = "idle" | "sending" | "success" | "error";
@@ -66,6 +66,18 @@ export default function Contact() {
           >
             <Mail size={18} className="text-signal-amber" /> {profile.email}
           </a>
+          </a>
+          {profile.whatsappNumber && (
+            <a
+              href={`https://wa.me/${profile.whatsappNumber}?text=${encodeURIComponent(
+                `Hi ${profile.name.split(" ")[0]}, I found your portfolio and would like to get in touch.`
+              )}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="focus-ring flex items-center gap-3 text-sm hover:text-signal-amber"
+            >
+              <MessageCircle size={18} className="text-signal-amber" /> WhatsApp
+            </a>
           <p className="flex items-center gap-3 text-sm text-muted">
             <MapPin size={18} className="text-signal-amber" /> {profile.location}
           </p>
