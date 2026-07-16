@@ -107,6 +107,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </a>
           <CursorTracker />
           {children}
+          <WhatsappWidget />
           <BackToTop />
           <CookieConsent />
         </ThemeProvider>
