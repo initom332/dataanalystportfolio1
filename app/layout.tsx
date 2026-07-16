@@ -4,6 +4,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import CursorTracker from "@/components/cursor-tracker";
 import BackToTop from "@/components/back-to-top";
 import CookieConsent from "@/components/cookie-consent";
+import WhatsappWidget from "@/components/whatsapp-widget";
 import "./globals.css";
 
 const spaceGrotesk = Space_Grotesk({
