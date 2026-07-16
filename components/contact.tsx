@@ -66,7 +66,7 @@ export default function Contact() {
           >
             <Mail size={18} className="text-signal-amber" /> {profile.email}
           </a>
-          </a>
+
           {profile.whatsappNumber && (
             <a
               href={`https://wa.me/${profile.whatsappNumber}?text=${encodeURIComponent(
@@ -78,6 +78,8 @@ export default function Contact() {
             >
               <MessageCircle size={18} className="text-signal-amber" /> WhatsApp
             </a>
+          )}
+
           <p className="flex items-center gap-3 text-sm text-muted">
             <MapPin size={18} className="text-signal-amber" /> {profile.location}
           </p>
