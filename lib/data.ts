@@ -6,7 +6,7 @@ export const profile = {
   location: "Abuja, Nigeria (Remote-friendly)",
   linkedin: "https://linkedin.com/in/initoma1",
   github: "https://github.com/initom332/",
-  resumeUrl: "/resume/Ini-Tom-Resume.pdf"
+  resumeUrl: "/resume/Ini-Tom-Resume.pdf",
   whatsappNumber: "2347066155554"
 };
 
