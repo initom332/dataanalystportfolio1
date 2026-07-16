@@ -145,7 +145,7 @@ export default function Hero() {
           <div className="card-surface relative overflow-hidden p-2">
             <div
               className="aspect-[4/5] w-full rounded-xl bg-gradient-to-br from-signal-violet/20 via-transparent to-signal-amber/20 bg-cover bg-center"
-              style={{ backgroundImage: "url('/images/profile.svg')" }}
+              style={{ backgroundImage: "url('/images/GOD.png')" }}
               role="img"
               aria-label="Portrait of Ini Tom"
             />
