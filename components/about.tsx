@@ -12,7 +12,7 @@ const values = [
   {
     icon: Compass,
     title: "Rigorous by default",
-    text: "Careful validation, honest uncertainty, and reproducible pipelines — no shortcuts on the fundamentals."
+    text: "Careful validation, honest uncertainty, and reproducible pipelines no shortcuts on the fundamentals."
   },
   {
     icon: Sparkles,
