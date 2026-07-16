@@ -6,7 +6,7 @@ import { Target, Compass, Sparkles } from "lucide-react";
 const values = [
   {
     icon: Target,
-    title: "Business-first",
+    title: "Business first",
     text: "Every model and dashboard is judged by the decision it improves, not its complexity."
   },
   {
