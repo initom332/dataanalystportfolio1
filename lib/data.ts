@@ -7,6 +7,7 @@ export const profile = {
   linkedin: "https://linkedin.com/in/initoma1",
   github: "https://github.com/initom332/",
   resumeUrl: "/resume/Ini-Tom-Resume.pdf"
+  whatsappNumber: "2347066155554"
 };
 
 export const stats = [
