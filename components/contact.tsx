@@ -7,9 +7,9 @@ import { profile } from "@/lib/data";
 
 type Status = "idle" | "sending" | "success" | "error";
 
-// Paste your form endpoint URL here (Formspree, Getform, Web3Forms, etc.)
-// e.g. "https://formspree.io/f/abcdwxyz"
-const FORM_ENDPOINT = process.env.NEXT_PUBLIC_FORM_ENDPOINT ?? "";
+// Get a free access key instantly at https://web3forms.com (no signup required)
+const WEB3FORMS_ACCESS_KEY = process.env.NEXT_PUBLIC_WEB3FORMS_KEY ?? "";
+const WEB3FORMS_ENDPOINT = "https://api.web3forms.com/submit";
 
 export default function Contact() {
   const [status, setStatus] = useState<Status>("idle");
@@ -20,19 +20,22 @@ export default function Contact() {
     setStatus("sending");
 
     try {
-      if (FORM_ENDPOINT) {
-        const res = await fetch(FORM_ENDPOINT, {
+      if (WEB3FORMS_ACCESS_KEY) {
+        const res = await fetch(WEB3FORMS_ENDPOINT, {
           method: "POST",
           headers: { "Content-Type": "application/json", Accept: "application/json" },
           body: JSON.stringify({
+            access_key: WEB3FORMS_ACCESS_KEY,
             name: form.name,
             email: form.email,
-            message: form.message
+            message: form.message,
+            subject: `New portfolio message from ${form.name}`
           })
         });
-        if (!res.ok) throw new Error(`Form endpoint responded with ${res.status}`);
+        const data = await res.json();
+        if (!res.ok || !data.success) throw new Error(data.message || `Request failed with ${res.status}`);
       } else {
-        // Fallback: no endpoint configured yet. See README for setup.
+        // Fallback: no access key configured yet. See README for setup.
         await new Promise((resolve) => setTimeout(resolve, 600));
       }
       setStatus("success");
@@ -66,7 +69,6 @@ export default function Contact() {
           >
             <Mail size={18} className="text-signal-amber" /> {profile.email}
           </a>
-
           {profile.whatsappNumber && (
             <a
               href={`https://wa.me/${profile.whatsappNumber}?text=${encodeURIComponent(
@@ -79,7 +81,6 @@ export default function Contact() {
               <MessageCircle size={18} className="text-signal-amber" /> WhatsApp
             </a>
           )}
-
           <p className="flex items-center gap-3 text-sm text-muted">
             <MapPin size={18} className="text-signal-amber" /> {profile.location}
           </p>
