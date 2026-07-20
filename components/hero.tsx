@@ -6,7 +6,7 @@ import { ArrowRight, Download, Github, Linkedin } from "lucide-react";
 import { profile, stats } from "@/lib/data";
 import ParticleField from "./particle-field";
 
-const roles = ["Data Analyst", "Data Scientist", "ML Engineer", "Insights Builder",];
+const roles = ["Data Analyst", "Data Scientist","Business Analyst", "ML Engineer", "Insights Builder",];
 
 function useTypewriter(words: string[]) {
   const [text, setText] = useState("");
